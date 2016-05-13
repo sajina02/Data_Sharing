@@ -6,7 +6,6 @@
 unzip(zipfile="activity.zip")
 data <- read.csv("activity.csv")
 ```
-
 ## What is mean total number of steps taken per day?
 ```{r}
 library(ggplot2)
@@ -15,7 +14,6 @@ qplot(total.steps, binwidth=1000, xlab="total number of steps taken each day")
 mean(total.steps, na.rm=TRUE)
 median(total.steps, na.rm=TRUE)
 ```
-
 ## What is the average daily activity pattern?
 ```{r}
 library(ggplot2)
@@ -26,13 +24,11 @@ ggplot(data=averages, aes(x=interval, y=steps)) +
     xlab("5-minute interval") +
     ylab("average number of steps taken")
 ```
-
 On average across all the days in the dataset, the 5-minute interval contains
 the maximum number of steps?
 ```{r}
 averages[which.max(averages$steps),]
 ```
-
 ## Imputing missing values
 
 There are many days/intervals where there are missing values (coded as `NA`). The presence of missing days may introduce bias into some calculations or summaries of the data.
@@ -42,7 +38,6 @@ missing <- is.na(data$steps)
 # How many missing
 table(missing)
 ```
-
 All of the missing values are filled in with mean value for that 5-minute
 interval.
 
