@@ -1,5 +1,4 @@
 ## Introduction
-
 It is now possible to collect a large amount of data about personal
 movement using activity monitoring devices such as a
 [Fitbit](http://www.fitbit.com), [Nike
@@ -19,7 +18,6 @@ individual collected during the months of October and November, 2012
 and include the number of steps taken in 5 minute intervals each day.
 
 ## Data
-
 The data for this assignment can be downloaded from the course web
 site:
 
@@ -35,9 +33,6 @@ The variables included in this dataset are:
 
 * **interval**: Identifier for the 5-minute interval in which
     measurement was taken
-
-
-
 
 The dataset is stored in a comma-separated-value (CSV) file and there
 are a total of 17,568 observations in this
@@ -72,8 +67,6 @@ repository state.
 NOTE: The GitHub repository also contains the dataset for the
 assignment so you do not have to download the data separately.
 
-
-
 ### Loading and preprocessing the data
 
 Show any code that is needed to
@@ -98,7 +91,6 @@ the dataset.
 1. Make a time series plot (i.e. `type = "l"`) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
-
 
 ### Imputing missing values
 
